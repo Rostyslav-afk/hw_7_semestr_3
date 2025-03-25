@@ -31,10 +31,18 @@ for (let i of message) {
 
 //6 Створити масив з 10-ти чисел. Знайти та вивести на екран максимальне значення з масиву.
 const request = [4, 3, 6, 234, 22, 12, 222, 88, 99, 1];
+let max = 0;
 for (let answer of request) {
-    if (answer < request.length) {
-        break;
+    if (answer > max) {
+        max = answer;
     }
-    console.log(answer);
-    
 }
+console.log(`Максимальне значення: ${max}`);
+
+//7 Створити масив з 10-ти чисел. Знайти всі парні числа в масиві та вивести їх на екран
+const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i of numbersArray) {
+    if (i % 2 === 0) {
+        console.log(`Парне число: ${i}`);
+    }
+}   
