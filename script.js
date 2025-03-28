@@ -24,8 +24,9 @@ for (let i = 0; i < numbers.length; i += 1) {
 const message = ["¡Hola!", "les", "gustan", "minecraft", "?"];
 
 for (let i of message) {
-    if (i.length > message.length) {
+    if (i.length > 5){
         console.log(i);
+        
     }
 }
 
